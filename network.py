@@ -18,7 +18,7 @@ class NetworkEnvelope:
         self.payload = payload
 
     def __repr__(self):
-        return '{}: {}'.format(
+        return 'Network: Bitcoin mainnet\nCommand: {}\nPayload: {}'.format(
             self.command.decode('ascii'),
             hexlify(self.payload).decode('ascii'),
         )
